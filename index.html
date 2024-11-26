@@ -1,63 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Buttons</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";; rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>;
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP_ICT9Sapphire_Q2SW2_Catapang_Athena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('ballet.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+        }
+        .form-container {
+            background-color: lightpink;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container d-flex justify-content-center">
+     <div class="form-container col-md-8 col-lg-6">
+            <h2 class="text-center mb-4">Ballet Club Enrolling Form</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
 
-<!-- Styles -->
 
-<button type="button" class="btn">Basics</button>
-<button type="button" class="btn btn-primary">Primary</button>
+                    <div class="col-md-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                    </div>
 
-<br>
-<br>
 
-<!-- Outline -->
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                   
 
-<button type="button" class="btn btn-outline-primary">Primary </button>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
 
-<br>
-<br>
+                <br>
+                <br>
 
-<!-- Size -->
 
-<button type="button" class="btn btn-primary btn-lg">Large </button>
-<button type="button" class="btn btn-primary btn-sm">Small </button>
+                <div class="mb-3">
+                    <label class="form-label">Preferred Ballet Class Schedule</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="programming" value="Programming">
+                        <label class="form-check-label" for="programming">7 A.M. - 9 A.M.</label>
+                    </div>
+                    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="electronics" value="Electronics">
+                        <label class="form-check-label" for="electronics">1 P.M. - 3 P.M.</label>
+                   
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="mechanical" value="Mechanical Design">
+                        <label class="form-check-label" for="mechanical"> 5 P.M. - 7 P.M.</label>
+                    </div>
+               <br>
+               <br>
 
-<br>
-<br>
+                <div class="mb-3">
+                    <label class="form-label">Ballet Experience Level</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="experience" id="beginner" value="Beginner">
+                        <label class="form-check-label" for="beginner">Beginner</label>
+                    </div>
+                   
 
-<!-- Blocklevel -->
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="experience" id="intermediate" value="Intermediate">
+                        <label class="form-check-label" for="intermediate">Intermediate</label>
+                    </div>
+                   
 
-<div class="d-grid col-6">
-	<button type="button" class="btn btn-primary btn-block"> Full-Width Button</button>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="experience" id="advanced" value="Advanced">
+                        <label class="form-check-label" for="advanced">Advanced</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="project" class="form-label">Preferred Ballet Project</label>
+                    <select class="form-select" id="project">
+                        <option selected>Choose a project...</option>
+                        <option value="Project A">Project A</option>
+                        <option value="Project B">Project B</option>
+                        <option value="Project C">Project C</option>
+                    </select>
+               
+
+                </div>
+                <div class="mb-3">
+                    <label for="statement" class="form-label">Statement of Interest</label>
+                    <textarea class="form-control" id="statement" rows="4" placeholder="Share your interests in ballet...."></textarea>
+               
+
+
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+             </div>
+        </form>
+    </div>
 </div>
-
-<br>
-<br>
-
-<span class="border"></span>
-
-<!-- Active/Disabled -->
-
-<button type="button" class="btn btn-primary" active>Active Primary </button>	
-<button type="button" class="btn btn-primary" disabled> Disabled Primary </button>
-
-<br>
-<br>
-
-<!-- Bootstrap Aler -->
-
-<div class="alert alert-success">
- 	<strong>Successful</strong> Indicates a successful or positive action
- </div>
-
-
 </body>
 </html>
